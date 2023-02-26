@@ -1,0 +1,1167 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.header-section {
+    background-color: #adb5bd;
+    color: #fff;
+    min-height: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400 !important;
+}
+
+.header-text-size{
+    font-size: 20px;
+}
+
+.not-visible{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+
+#upBasicId,
+#upmedicalAllowanceId,
+#uphouseRentId,
+#upconveyanceId,
+#upfoodAllowanceId
+{
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+
+
+.custom-text{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.feature-section-one {
+    background-color: #cedeee4f;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.feature-section-two {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.feature-section-one {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.custom-image-1 {
+    height: 400px;
+}
+
+
+.text-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.text-section-one {
+    margin-top: 50px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.custom-font-three {
+    font-weight: 400 !important;
+}
+
+.custom-font-four {
+    padding-top: 20px;
+    font-weight: 300 !important
+}
+
+
+.custom-font-five{
+    font-size: 30px;
+    font-weight: 300 !important
+}
+
+.custom-font-six{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 300 !important
+}
+
+
+.custom-font-seven{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 300 !important
+}
+
+.employeeOverviewSection {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+.fontDisplay{
+    font-weight: 300 !important;
+}
+
+
+
+.custom-font-eight{
+    font-size: 30px;
+    font-weight: 300 !important
+}
+
+
+
+.custom-font-one {
+    font-size: 30px;
+    font-weight: 400 !important;
+}
+
+
+.custom-font-two {
+    padding-top: 1rem;
+    font-size: 15px;
+    font-weight: 300 !important;
+}
+
+
+custom-font-four {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+
+
+.custom-button {
+    background-color: #0d6efd;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-bottom: 3px;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+
+
+
+.body-section{
+    margin-top: 1rem;
+    position: relative;
+}
+
+
+
+
+
+
+/* .name-section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.email-section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.phone-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.designation-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.birthdate-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+} */
+
+
+
+.navbar-brand {
+    color: #141619a8;
+}
+
+
+.navbar-brand:hover{
+    color: #141619a8;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+
+.title-section {
+    font-weight: 500 !important;
+}
+
+.title-details-section {
+    font-weight: 400 !important;
+    font-size: medium;
+}
+
+
+
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: unset;
+    border-width: 0;
+}
+
+
+
+.custom-button-add {
+    width: max-content;
+}
+
+
+
+
+.list-head {
+    border-radius: 3px;
+}
+
+
+
+.font-design {
+    font-weight: 300 !important;
+}
+
+
+
+.employee-update-img {
+    width: min-content;
+}
+
+
+.employee-database-show {
+    margin-top: 20px;
+}
+
+.table-alldata {
+    margin-top: 10px;
+}
+
+.search_email {
+    border-style: groove;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+
+.btn-primary {
+    border-radius: 3px;
+}
+
+.searchboxarea {
+    margin-top: 20px;
+}
+
+.employee-email-update-class-row{
+    background-color: #fff;
+}
+
+.landing-section{
+    font-size: 15px;
+    font-weight: 300 !important;
+}
+
+
+
+.employee-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.list-head{
+    padding-top: 5px;
+}
+
+
+
+.employee-add-area-section{
+    background-color: #fff;
+}
+
+
+.form-control{
+    background-color:#e9e9e95c;
+}
+
+
+.body-section{
+    margin-bottom: 40px;
+}
+
+
+.search_element{
+    margin-top: 3rem;
+}
+
+.employee-section{
+    border-bottom-style: inset;
+    border-width: thin;
+}
+
+
+
+
+
+.list-head{
+    border-bottom-style: inset;
+    border-width: thin;
+}
+
+
+
+/* .check-box-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+} */
+
+
+
+
+.name-section{
+    font-weight: 300 !important;
+}
+
+
+.email-section{
+    font-weight: 400 !important;
+}
+
+.check-box-section{
+    font-weight: 400 !important;
+}
+
+
+
+
+
+
+
+.header-title-tag{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem !important;
+}
+
+
+
+
+#navBandId{
+
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+.dashboardButton{
+    min-width: 2rem;
+}
+
+
+
+
+.index-list{
+    margin-top: 1rem;
+}
+
+
+
+.customUpdateButton{
+    margin-left: 1rem;
+}
+
+
+.sidebar-section{
+    width: 2rem;
+}
+
+
+
+.headerTitleSection{
+    margin-top: 1rem;
+}
+
+
+.custom-font-design{
+    padding-left: 1rem;
+    font-size: 10px;
+}
+
+
+.landing-section{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    min-height: 40rem;
+}
+
+
+
+
+.tilteFont{
+    font-weight: 400 !important;
+}
+
+
+#sideBarSectionId{
+    margin-top: 3rem;
+    position: fixed;
+    left: 0;
+}
+
+
+
+#bodyContentSectionId{
+    z-index: 1;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+
+
+#payROllId,
+#employeeSalaryIndex,
+#salaryUpdateSection{
+    min-height: 20rem;
+}
+
+
+
+
+
+#employeeListId{
+    margin-top: 2rem;
+}
+
+#jobStatisticsId{
+    margin-top: 10rem;
+}
+
+
+
+
+
+
+
+.tilteFontTwo{
+    font-weight: 300 !important;
+}
+
+
+.listFont{
+    font-weight: 300 !important;
+}
+
+
+.listFont{
+    font-weight: 400 !important;
+    font-size: 1.25rem;
+}
+
+
+
+.listFontTwo{
+    font-weight: 300 !important;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+.headerSection{
+    padding: 1rem;
+}
+
+.customFontSize{
+    font-weight: 400 !important;
+}
+
+
+
+
+
+#addButtonId{
+    background-color: #fff;
+    border-color: #0d6efd;
+    color: #000;
+}
+
+
+#addButtonId:hover{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+
+
+.form-control{
+    height: 40px !important;
+}
+
+.landing-section{
+    background-color: #fff;
+    padding: 1rem;
+}
+
+
+
+.detailsClass{
+    text-decoration: none;
+    color: #198754b3;
+}
+
+
+.detailsClass:hover{
+    color: #198754b3;
+}
+
+.prevSection{
+    text-decoration: none;
+    color: #198754b3;
+}
+
+
+
+.updateSalaryClass{
+    text-decoration: none;
+    color: #3894d1ec;
+}
+
+
+.detailsClass:hover{
+    color: #3894d1ec;
+}
+
+
+
+
+#employeeAddStatus{
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+
+
+
+
+#addEmployee{
+    margin-right: 0px;
+}
+
+
+
+
+
+
+.titleHead{
+    margin-bottom:1rem;
+}
+
+
+
+
+
+
+.homePageheader-section{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.button-section-class{
+    margin-top: 30px;
+}
+
+.customform-two-form{
+    margin-top: 3rem;
+}
+
+
+.customAnchorTag{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.employeeTagTitle{
+    text-decoration: none;
+    color: #000;
+    margin-left: 2rem;
+}
+
+
+.employee-list{
+    border-style: groove;
+}
+
+
+.payListTitle{
+    width: 1240px;
+    
+}
+
+
+
+
+
+.employeeStatus{
+    width: 1240px;
+}
+
+
+.employeeStatistics{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+    .form-design-employee {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .employee-data {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .text-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .feature-section-one {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .text-section-one {
+        margin-top: 50px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .employee-record-area{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .search-section{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .update-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .customform-two-form{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .employee-search-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .update-section{
+        flex-direction: column-reverse;
+    }
+
+
+    #employeeAddFormId{
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+
+    #employeePayRollId{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+
+        min-width: 768px;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+    
+
+    #employeeUpdateRowId{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: inherit;
+
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+
+    #employeeStatisticsId{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        
+        padding: inherit;
+
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+
+    #employeePayrollId{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: inherit;
+
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+    #offcanvasNavbar-ID{
+        margin-top: 3rem;
+    }
+    
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .searchboxarea {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .employee-data {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+    .employee-record-area{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .search-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .customform-two-form{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .employee-search-section{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .update-section{
+        flex-direction: initial;
+    }
+    
+    #employeePayRollId{
+        min-width: 1200px;
+    }
+
+
+    
+    #employeeAddFormId{
+        
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+    #employeeUpdateRowId{
+
+        padding: inherit;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .custom-font-one {
+        text-align: center;
+    }
+
+    .custom-font-two {
+        text-align: center;
+    }
+
+    .employee-database-show {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .employee-data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .feature-section-two {
+        padding: 1rem;
+    }
+
+    .feature-section-one {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .text-section-one {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .employee-record-area{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .search-section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .update-section{
+        flex-direction: column-reverse;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .customform-two-form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .employee-search-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #employeePayRollId{
+        width: 100%;
+    }
+
+
+
+    #employeeAddFormId{
+        
+        
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+
+    #employeeUpdateRowId{
+        padding: inherit;
+
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+}
+
+
+
+
+@media (min-width: 1200px){
+
+
+    #employeeAddFormId{
+        
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+}
+
+
+
+
+@media (min-width: 2560px){
+    .searchboxarea {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .employee-data {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+
+    .employee-record-area{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .search-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .customform-two-form{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .update-section{
+        flex-direction: initial;
+    }
+
+
+    #employeeAddFormId{
+
+        padding: inherit;
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+
+    #employeeUpdateRowId{
+        padding: inherit;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        max-height: 100%;
+        color: var(--bs-offcanvas-color);
+        background-color: var(--bs-offcanvas-bg);
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

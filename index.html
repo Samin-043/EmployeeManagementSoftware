@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css.map" rel="stylesheet">
+    <script src="js/Dependencies/popper.min.js"></script>
+
+    <link rel="stylesheet" href='css/styles.css' />
+
+    <title>Employee Management</title>
+</head>
+
+
+
+
+<body>
+
+    <section class="body">
+
+        <div class="container-fluid body-section">
+            <div class="row">
+                <div class="col-auto" id="sideBarSectionId">
+                    <div class="col-auto index-list">
+                        <a href="#employeeListId">
+                            <button class="btn btn-outline-primary" title="Employee List" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-people" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <div class="col-auto index-list">
+                        <button class="btn btn-outline-primary" title="Job Statistics" type="button"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-card-list" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path
+                                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div class="col-auto index-list">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-cash" viewBox="0 0 16 16">
+                                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                <path
+                                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col" id="bodyContentSectionId">
+                    <div class="col landing-section" id="employeeListId">
+                        <div class="col titleHead d-flex justify-content-between">
+                            <h2 class="mt-4">Employees</h2>
+
+                            <button class="btn btn-outline-primary mt-4" title="Add Employee" type="button"
+                                data-bs-target="#exampleModal2" data-bs-toggle="modal">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-person-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                    <path fill-rule="evenodd"
+                                        d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                                New Employee
+                            </button>
+                        </div>
+
+
+                        <div class="row list-head pt-2">
+                            <div class="col not-visible" id="showDeleteUpdateButton">
+                                <button type="button" id="deleteButtonId" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                        <path fill-rule="evenodd"
+                                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                    </svg>
+                                </button>
+
+                                <button type="button" class="btn" id="previousEmailId" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pen" viewBox="0 0 16 16">
+                                        <path
+                                            d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="col name-section">
+                                <p class="font-design">NAME</p>
+                            </div>
+                            <div class="col phone-section">
+                                <p class="font-design">PHONE</p>
+                            </div>
+                            <div class="col department-section">
+                                <p class="font-design">DEPARTMENT</p>
+                            </div>
+                            <div class="col email-section">
+                                <p class="font-design">EMAIL</p>
+                            </div>
+                            <div class="col birthdate-section">
+                                <p class="font-design">BIRTHDATE</p>
+                            </div>
+                        </div>
+
+                        <!--All employee list here-->
+                        <div class="row" id="employee-list">
+                        </div>
+                    </div>
+
+
+                    <!-- Update Employee Data -->
+
+                    <!-- <div class="offcanvas offcanvas-start pt-4" data-bs-backdrop="static" tabindex="-1"
+                        id="employeeUpdateRowId" aria-labelledby="employeeUpdateRowIdLabel">
+
+                        <div class="offcanvas-header">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h1 class="custom-font-eight">Update Employee Email</h1>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+
+                        <div class="offcanvas-body">
+                            <div class="row update-section" id="updateId">
+                                <div class="col-lg-6 col-sm-12 pt-3 customform-two-form">
+                                    <form name="customform-two" id="formSearchId">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Old Email</label>
+                                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                name="f_prev_email" id="prev-email" disabled>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">New Email</label>
+                                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                name="f_new_email" id="new-email" placeholder="please enter new email"
+                                                required>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12">
+                                    <img src="images/employee_img3.webp" class="img-fluid employee-update-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <!--job statistics -->
+
+                    <!-- <div class="container-fluid" id="jobStatisticsId">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h1 class="custom-font-eight">Job Statistics</h1>
+                            </div>
+                        </div>
+                        <div class="row dashboardSection">
+                            <div class="col">
+                                <div class="row overviewEmployee justify-content-around">
+                                    <div class="col m-4">
+                                        <div class="row">
+                                            <div class="col border me-2 text-center employeeStatistics">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                                </svg>
+                                                <h4 class="listFont mt-2" id="totalEmployees">0</h4>
+                                                <h4 class="listFontTwo mt-2">Total Employees</h4>
+                                            </div>
+
+
+
+                                            <div class="col border me-2 text-center employeeStatistics">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
+                                                </svg>
+                                                <h4 class="listFont mt-2" id="jobApplicants">0</h4>
+                                                <h4 class="listFontTwo mt-2">Job Applicants</h4>
+
+                                            </div>
+
+
+
+                                            <div class="col border me-2 text-center employeeStatistics">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-person-fill-add"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                    <path
+                                                        d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                                </svg>
+                                                <h4 class="listFont mt-2" id="newEmployee">0</h4>
+                                                <h4 class="listFontTwo mt-2">New Employees</h4>
+                                            </div>
+
+
+
+                                            <div class="col border me-2 text-center employeeStatistics">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-person-fill-dash"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                    <path
+                                                        d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                                </svg>
+                                                <h4 class="listFont mt-2" id="resignedEmployee">0</h4>
+                                                <h4 class="listFontTwo mt-2">Resigned Employees</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+            <!-- Employee Payroll section-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid salarySection">
+                                <div class="container-fluid" id="payROllId" style="display: block;">
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <h1 class="custom-font-five">Payroll</h1>
+                                        </div>
+                                    </div>
+
+                                    <!-- payListTitle -->
+                                    <div class="row border-bottom">
+                                        <div class="col name-section">
+                                            <p class="font-design">NAME</p>
+                                        </div>
+                                        <div class="col phone-section">
+                                            <p class="font-design">ROLE</p>
+                                        </div>
+                                        <div class="col designation-section">
+                                            <p class="font-design">EXPERIENCE</p>
+                                        </div>
+                                        <div class="col email-section">
+                                            <p class="font-design">SALARY RANGE</p>
+                                        </div>
+                                        <div class="col email-section">
+                                            <p class="font-design"></p>
+                                        </div>
+                                        <div class="col email-section">
+                                            <p class="font-design"></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- payListTitleElement -->
+                                    <div class="row payListTitleElement" id="employeePayList">
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid" id="employeeSalaryIndex" style="display: none;">
+                                    <div class="row">
+                                        <div class="col text-center p-2">
+                                            Salary
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-around">
+                                        <div class="col-lg-6 col-sm-12 pt-3">
+                                            <div class="col d-flex pt-2">
+                                                <p>Name : </p>
+                                                <p id="employeeNameId"></p>
+                                            </div>
+
+                                            <div class="col d-flex pt-2">
+                                                <p>Years of experience : </p>
+                                                <p id="employeeYearsOfExperienceId"></p>
+                                            </div>
+
+                                            <div class="col d-flex pt-2">
+                                                <p>salary : </p>
+                                                <p id="employeeSalaryId"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-sm-12 pt-3">
+                                            <div class="col d-flex pt-2">
+                                                <p>Basic : </p>
+                                                <p id="employeeBasicId"></p>
+                                            </div>
+
+                                            <div class="col d-flex">
+                                                <div class="col d-flex pt-2">
+                                                    <p>Medical allowance : </p>
+                                                    <p id="medicalAllowanceId"></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row d-flex">
+                                                <div class="col d-flex pt-2">
+                                                    <p>House Rent : </p>
+                                                    <p id="houseRentId"></p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row d-flex">
+                                                <div class="col d-flex pt-2">
+                                                    <p>Conveyance : </p>
+                                                    <p id="conveyanceId"></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row d-flex">
+                                                <div class="col d-flex pt-2">
+                                                    <p>Food allowance : </p>
+                                                    <p id="foodAllowanceId"></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-primary" id="salaryBackId">Back
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--salary statistics-->
+                                <div class="row" id="salaryUpdateSection" style="display: none;">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="salaryUpdateForm" id="salaryUpdateFormId">
+                                            <div class="row mb-3">
+                                                <label for="exampleInputName1" class="form-label">Salary</label>
+                                                <input type="number" name="employeeBasic" id="upBasicId" required>
+                                            </div>
+
+                                            <!-- <div class="row mb-3">
+                                                <label for="exampleInputName1" class="form-label">Medical
+                                                    allowance</label>
+                                                <input type="number" name="medicalAllowance"
+                                                    id="upmedicalAllowanceId" disabled required>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label for="exampleInputName1" class="form-label">House Rent</label>
+                                                <input type="number" name="houseRent"
+                                                    id="uphouseRentId" required>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label for="exampleInputName1" class="form-label">Conveyance</label>
+                                                <input type="number" name="conveyance"
+                                                    id="upconveyanceId" required>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label for="exampleInputName1" class="form-label">Food
+                                                    allowance</label>
+                                                <input type="number" name="foodAllowance"
+                                                    id="upfoodAllowanceId" required>
+                                            </div> -->
+
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-between pt-3">
+                                                    <button class="btn btn-outline-primary"
+                                                        id="salaryUpdateButtonId">Update Salary
+                                                    </button>
+
+                                                    <button class="btn btn-outline-primary" id="salaryBackButtonId">Back
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Employee jobstatistics section-->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h1 class="custom-font-eight">Job Statistics</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboardSection">
+                                <div class="col">
+                                    <div class="row overviewEmployee justify-content-around">
+                                        <div class="col m-4">
+                                            <div class="row">
+                                                <div class="col border me-2 text-center employeeStatistics">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-people-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                                    </svg>
+                                                    <h4 class="listFont mt-2" id="totalEmployees">0</h4>
+                                                    <h4 class="listFontTwo mt-2">Total Employees</h4>
+                                                </div>
+
+
+
+                                                <div class="col border me-2 text-center employeeStatistics">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-bag-plus-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
+                                                    </svg>
+                                                    <h4 class="listFont mt-2" id="jobApplicants">0</h4>
+                                                    <h4 class="listFontTwo mt-2">Job Applicants</h4>
+
+                                                </div>
+
+
+
+                                                <div class="col border me-2 text-center employeeStatistics">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-person-fill-add"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                        <path
+                                                            d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                                    </svg>
+                                                    <h4 class="listFont mt-2" id="newEmployee">0</h4>
+                                                    <h4 class="listFontTwo mt-2">New Employees</h4>
+                                                </div>
+
+
+
+                                                <div class="col border me-2 text-center employeeStatistics">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-person-fill-dash"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                        <path
+                                                            d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                                    </svg>
+                                                    <h4 class="listFont mt-2" id="resignedEmployee">0</h4>
+                                                    <h4 class="listFontTwo mt-2">Resigned Employees</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add new Employee -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h1 class="custom-font-five">Add Employee</h1>
+                                </div>
+                            </div>
+
+                            <div class="row employee-add-area-section" id="employee-add-area-section-id">
+                                <div class="col">
+                                    <div class="row employee-add-section pb-2 pt-2">
+                                        <div class="col">
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <img src="images/employee_image.png"
+                                                        class="img-fluid employee-icon-img imageEmployeeAdd">
+                                                </div>
+
+                                                <div class="col-lg-6 col-sm-12 form-design-employee">
+                                                    <form name="customform" id="formId">
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputName1"
+                                                                class="form-label">Name</label>
+                                                            <input type="text" class="form-control"
+                                                                aria-describedby="emailHelp" name="f_name"
+                                                                id="form-name" autocomplete="off" required>
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputName1"
+                                                                class="form-label">Phone</label>
+                                                            <input type="number" class="form-control" name="f_phone"
+                                                                id="form-phone" autocomplete="off" maxlength="11"
+                                                                required>
+                                                        </div>
+
+
+                                                        <div class="mb-3" id="deptId">
+
+                                                            <label for="exampleInputName1" class="form-label">Department
+                                                            </label>
+
+                                                            <select class="form-select form-control"
+                                                                id="f_departmentSelection" required>
+                                                                <option selected></option>
+                                                                <option value="1">Software Development</option>
+                                                                <option value="2">Devops</option>
+                                                                <option value="3">Business</option>
+                                                            </select>
+                                                        </div>
+
+
+
+                                                        <div class="mb-3" id="jobTitleId">
+
+                                                            <label for="exampleInputName1" class="form-label">Job Title
+                                                                Selection
+                                                            </label>
+
+                                                            <select class="form-select form-control"
+                                                                id="f_jobTitleSelection" required>
+                                                                <option selected></option>
+
+                                                                <option value="1">Senior Software Engineer</option>
+                                                                <option value="2">Junior Software Engineer</option>
+                                                                <option value="3">Programmer</option>
+                                                                <option value="4">Web Developer</option>
+                                                                <option value="5">Devops Engineer</option>
+                                                                <option value="6">Marketing officer</option>
+                                                                <option value="7">Sales officer</option>
+
+                                                            </select>
+
+                                                        </div>
+
+
+                                                        <div class="mb-3" id="dateOfJoining">
+                                                            <label for="exampleInputName1" class="form-label">Date of
+                                                                joining</label>
+                                                            <input type="date" class="form-control"
+                                                                name="f_dateOfJoining" id="joiningDateId" required>
+                                                        </div>
+
+
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label">Email
+                                                                address</label>
+                                                            <input type="email" class="form-control"
+                                                                aria-describedby="emailHelp" name="f_email"
+                                                                id="form-email" autocomplete="off" required>
+                                                            <div id="emailHelp" class="form-text">We'll never share your
+                                                                email
+                                                                with
+                                                                anyone else.</div>
+                                                        </div>
+
+
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputName1"
+                                                                class="form-label">Birthdate</label>
+                                                            <input type="date" class="form-control" name="f_birthdate"
+                                                                id="form-birthday" autocomplete="off" required>
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputName1"
+                                                                class="form-label">Salary</label>
+                                                            <input type="number" class="form-control" name="f_salary"
+                                                                id="form-salary" autocomplete="off" value="10000"
+                                                                required>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col d-flex justify-content-between pt-3">
+                                                                <button class="btn btn-outline-primary"
+                                                                    id="employeeAddButtonId">Add Employee
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-outline-primary"
+                                                                    data-bs-dismiss="modal" aria-label="Close">Cancel
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="toast-container position-fixed top-0 end-0 p-3">
+                                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+                                                        aria-atomic="true">
+                                                        <div class="toast-body" id="employeeAddStatus">
+                                                            <div class="col d-flex justify-content-between">
+                                                                <h6>Employee Add Successfully</h6>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="toast" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Update Employee Data -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h1 class="custom-font-eight">Update Employee Email</h1>
+                                </div>
+                            </div>
+
+                            <div class="row update-section" id="updateId">
+                                <div class="col-lg-6 col-sm-12 pt-3 customform-two-form">
+                                    <form name="customform-two" id="formSearchId">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Old Email</label>
+                                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                name="f_prev_email" id="prev-email">
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">New Email</label>
+                                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                name="f_new_email" id="new-email" placeholder="please enter new email"
+                                                required>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col d-flex justify-content-between">
+                                                <button type="submit" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">Update</button>
+                                                <button type="submit" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">Back</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12">
+                                    <img src="images/employee_img3.webp" class="img-fluid employee-update-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--js script file-->
+    <script type="module" src="modules/main.js"></script>
+    <script src="js/Dependencies/bootstrap.bundle.min.js"></script>
+    <script src="js/Dependencies/bootstrap.min.js"></script>
+    <script src="js/Dependencies/popper.min.js"></script>
+
+
+</body>
+
+</html>
