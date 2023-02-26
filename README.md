@@ -4,6 +4,6 @@ Here is my first javascript project. In this project, I try to implement Employe
 
 Tools and Technologies: HTML,CSS,Javascript.
 
-Project Link : https://github.com/Samin-043/EmployeeManagementSoftware
+Project Link : https://github.com/Samin-043/EmployeeManagementSystem
 
-Live Demo : https://samin-043.github.io/EmployeeManagementSoftware/
+Live Demo : https://samin-043.github.io/EmployeeManagementSystem/
