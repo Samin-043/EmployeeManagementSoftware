@@ -24,65 +24,81 @@
 
         <div class="container-fluid body-section d-flex">
             <div class="row w-100">
-                <div class="col-auto w-20 me-3" id="sideBarSectionId">
-                    <div class="col-auto index-list">
-                        <a href="#employeeListId">
-                            <button class="btn btn-outline-primary" title="Employee List" type="button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-people" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                                </svg>
-                            </button>
-                        </a>
-                    </div>
+                <!-- <div class="col-auto w-20 me-3" id="sideBarSectionId">
 
+                </div> -->
 
-                    <div class="col-auto index-list">
-                        <button class="btn btn-outline-primary" title="Job Statistics" type="button"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-card-list" viewBox="0 0 16 16">
-                                <path
-                                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                <path
-                                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                            </svg>
-                        </button>
-                    </div>
-
-
-                    <div class="col-auto index-list">
-                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-cash" viewBox="0 0 16 16">
-                                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-                                <path
-                                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
-                            </svg>
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="col ms-5" id="bodyContentSectionId">
+                <div class="col mx-auto" id="bodyContentSectionId">
                     <div class="col landing-section" id="employeeListId">
                         <div class="row titleHead">
-                            <div class="card-body d-flex flex-lg-row flex-column">
-                                <h2 class="my-1 mx-sm-auto mx-auto ms-lg-0">Employees</h2>
-                                <button class="btn btn-outline-primary my-1 mx-sm-auto mx-auto me-lg-0" title="Add Employee" type="button"
-                                    data-bs-target="#exampleModal2" data-bs-toggle="modal">
+                            <div class="card-body">
+                                <h2 class="text-center">Employees</h2>
+                            </div>
+                        </div>
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-person-plus" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                                        <path fill-rule="evenodd"
-                                            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
-                                    New Employee
-                                </button>
+
+
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-auto col-md-auto col-sm-6 col-12 index-list">
+                                        <a href="#employeeListId">
+                                            <button class="btn btn-outline-primary" title="Employee List" type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                                </svg>
+                                                Employee List
+                                            </button>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-lg-auto col-md-auto col-sm-6 col-12 index-list">
+                                        <button class="btn btn-outline-primary" title="Job Statistics" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                                <path
+                                                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                                            </svg>
+                                            Job Statistics
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-lg-auto col-md-auto col-sm-6 col-12 index-list">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            title="Payroll" data-bs-target="#exampleModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                <path
+                                                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                            </svg>
+                                            Payroll
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-lg-auto col-md-auto col-sm-6 col-12 index-list ms-lg-auto">
+                                        <button class="btn btn-outline-primary ms-lg-auto" title="Add Employee"
+                                            type="button" data-bs-target="#exampleModal2" data-bs-toggle="modal">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                            </svg>
+                                            New Employee
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -412,7 +428,8 @@
                                             <div class="row">
                                                 <div class="col d-flex justify-content-between pt-3">
                                                     <button class="btn btn-outline-primary"
-                                                        id="salaryUpdateButtonId">Update Salary
+                                                        id="salaryUpdateButtonId">Update
+                                                        Salary
                                                     </button>
 
                                                     <button class="btn btn-outline-primary" id="salaryBackButtonId">Back
@@ -537,9 +554,9 @@
                                         <div class="col">
 
                                             <div class="row">
-                                                <div class="col-lg-6 col-sm-12">
+                                                <div class="col-lg-6 col-sm-12 my-auto">
                                                     <img src="images/employee_image.png"
-                                                        class="img-fluid employee-icon-img imageEmployeeAdd">
+                                                        class="my-auto img-fluid employee-icon-img imageEmployeeAdd">
                                                 </div>
 
                                                 <div class="col-lg-6 col-sm-12 form-design-employee">
